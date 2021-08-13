@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Navbar</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Syed</h1>
+            <nav class="navbar">
+                <span class="openSideMenu" onclick="openSideMenu()">
+                    <a href="#"><img src="https://cdn0.iconfinder.com/data/icons/heroicons-ui/24/icon-menu-512.png" width="35px" height="35px"></a>
+                </span>
+                <ul class="navbar-nav">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">contact</a></li>
+                    </ul>
+            </nav>
+        </header>
+            <div class="bg"></div>
+            <h2>Responsive Navbar</h2>
+            <div id="sideNav" class="sideMenu">
+                    <a href="#" onclick="closeMenu()" class="closeBtn">&times;</a>
+                    <a href="#">home</a>
+                    <a href="#">about</a>
+                    <a href="#">services</a>
+                    <a href="#">contact</a>
+            </div>
+            <script>
+                function openSideMenu(){
+                    document.getElementById('sideNav').style.width="220px";
+                }
+                function closeMenu(){
+                    document.getElementById('sideNav').style.width="0px";
+                }
+            </script>
+        </body>
+</html>
